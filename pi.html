@@ -1,0 +1,41 @@
+<html>
+<head>
+<link rel=stylesheet type=text/css href=/css/pi.css>
+<link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+</head>
+<script type=text/javascript>
+
+var nouns = ["The 1%","Capitalism","truth","lies","world","blockchain","paradigm","patriarchy","narrative","government","the system","source code","blockchain","hash",Math.floor(Math.random() * 100) + "%","gender"];
+
+var verbs = ["blockchain","smash","eat","hack","debate","distribute","decentralize","centralize","topple","fight","hammer","program"];
+
+function changeMessage() {
+	var verb = verbs[Math.floor(Math.random()*verbs.length)];
+	var noun = nouns[Math.floor(Math.random()*nouns.length)];
+	
+	var phrase = verb + " the " + noun;
+	phrase = phrase.toUpperCase();
+
+	document.getElementById("message").innerHTML= "<h1>" + phrase + "</h1>";
+	var timeoutID = window.setTimeout(changeMessage, Math.floor(Math.random()*10000));
+}
+</script>
+
+
+<div class="vhs-message">
+	<span id=message>
+		<h1>BLOCKCHAIN THE PATRIACHY</h1>
+	</span>
+	
+</div>
+<div class="screen-bottom">
+	<div class="line">
+		<div class="red"></div>
+		<div class="white"></div>
+		<div class="green"></div>
+	</div>
+</div>
+<script>
+changeMessage();
+</script>
+</html>
