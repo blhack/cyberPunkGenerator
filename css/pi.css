@@ -61,7 +61,7 @@ body:after {
 
 h1 {
   position: absolute;
-  font-size: 0.5em;
+  font-size: 6em;
   left: 0;
   -webkit-filter: blur(3px);
           filter: blur(3px);
